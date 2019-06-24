@@ -1,0 +1,78 @@
+# @vestibule-link/alexa-video-skill-types ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiM3JUTExvN0g0dC9TV2ZvendnSElzVytPNWd1OWp5bEhWcHJXVzc0UlVPSitHVU5RZ1g5MHl5SEcvTk1BNlEyU1ltdmVOaEx5OTgvSHBwZ3Z5WmJjRytnPSIsIml2UGFyYW1ldGVyU3BlYyI6IkQ4NUViVFdRUTJaUk5KdEQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
+##  Typescript types for vestibile.link to support alexa video skills
+### Supports
+* Alexa
+  * events
+    * Response
+    * StateReport
+  * directives
+    * ReportState
+* Alexa.Authorization
+  * directives
+    * AcceptGrant
+  * events
+    * AcceptGrant.Response
+    * ErrorResponse
+* Alexa.ChannelController
+  * directives
+    * ChangeChannel
+    * SkipChannels
+  * contexts
+    * channel
+* Alexa.Discovery
+  * directives
+    * Discover
+  * events
+    * Discover.Response
+* Alexa.EndpointHealth
+  * contexts
+    * connectivity
+* Alexa.Launcher
+  * directives
+    * LaunchTarget
+  * contexts
+    * target
+* Alexa.PlaybackController
+  * directives
+    * Play
+    * Pause
+    * Stop
+    * Next
+    * Rewind
+    * FastForward
+    * StartOver
+* Alexa.PlaybackStateReporter
+  * contexts
+    * playbackState
+* Alexa.PowerController
+  * directives
+    * TurnOn
+    * TurnOff
+  * contexts
+    * powerState
+* Alexa.RecordController
+  * directives
+    * StartRecording
+    * StopRecording
+  * contexts
+    * RecordingState
+* Alexa.RemoteVideoPlayer
+  * directives
+    * SearchAndPlay
+    * SearchAndDisplayResults
+* Alexa.SeekController
+  * directives
+    * AdjustSeekPosition
+  * events
+    * StateReport
+* Alexa.SearchAndRecordResponse
+  * directives
+    * SearchAndRecord
+    * CancelRecording
+    * DeleteRecording
+  * events
+    * Alexa.SearchAndRecordResponse
+* Alexa.WakeOnLANController
+  * events
+    * WakeUp

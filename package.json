@@ -1,0 +1,22 @@
+{
+  "name": "@vestibule-link/alexa-video-skill-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\"",
+    "generate-npmrc": "echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc",
+    "clean": "rm .npmrc"
+  },
+  "keywords": [],
+  "author": "Raymond Munian",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/rym002/vestibule-alexa-video-skill-types",
+    "type": "git"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}

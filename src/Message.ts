@@ -28,7 +28,7 @@ export module Message {
         }
     }
     export interface EndpointRequest extends EndpointCookie {
-        scope?: Scope
+        scope: Scope
     }
 
 

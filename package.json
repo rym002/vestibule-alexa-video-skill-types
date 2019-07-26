@@ -1,6 +1,6 @@
 {
   "name": "@vestibule-link/alexa-video-skill-types",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "type": "git"
   },
   "devDependencies": {
-    "typescript": "^3.5.2"
-  }
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
 }

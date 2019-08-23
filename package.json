@@ -4,9 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "prepack": "tsc",
     "test": "echo \"Error: no test specified\"",
-    "generate-npmrc": "echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc",
     "clean": "rm .npmrc"
   },
   "keywords": [],

@@ -4,7 +4,7 @@ import { Message } from './Message';
 
 export module Event {
 
-    type Namespaces = {
+    export type Namespaces = {
         [NS in keyof NamedMessage]:
         NamedMessage[NS] extends never
         ? never

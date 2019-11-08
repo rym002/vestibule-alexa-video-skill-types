@@ -1,7 +1,7 @@
 import { Message } from './Message';
 
 export module KeypadController {
-    type Keys = 'UP'
+    export type Keys = 'UP'
         | 'DOWN'
         | 'LEFT'
         | 'RIGHT'

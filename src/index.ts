@@ -13,6 +13,7 @@ import { WakeOnLANController } from './WakeOnLANController';
 import { RemoteVideoPlayer } from './RemoteVideoPlayer';
 import { Launcher } from './Launcher';
 import { VideoRecorder } from './VideoRecorder';
+import { KeypadController } from './KeypadController'
 
 export * from './Discovery';
 export * from './Message';
@@ -34,6 +35,7 @@ export * from './Directive';
 export * from './Event';
 export * from './Alexa';
 export * from './RemoteVideoPlayer';
+export * from './KeypadController';
 
 export type AllSkills = ChannelController.SkillInterface
     & EndpointHealth.SkillInterface
@@ -50,3 +52,4 @@ export type AllSkills = ChannelController.SkillInterface
     & RemoteVideoPlayer.SkillInterface
     & Launcher.SkillInterface
     & VideoRecorder.SkillInterface
+    & KeypadController.SkillInterface

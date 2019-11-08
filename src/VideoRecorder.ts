@@ -26,7 +26,7 @@ export module VideoRecorder {
     export type NamespaceType = 'Alexa.VideoRecorder';
     export const namespace: NamespaceType = 'Alexa.VideoRecorder';
 
-    interface ResponsePayload {
+    export interface ResponsePayload {
         recordingStatus: RecordingStatus
     }
     interface Directives {

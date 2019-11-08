@@ -1,8 +1,6 @@
 import { Message } from './Message';
 
 export module Launcher {
-    type States = Targets;
-
     export type Targets = { identifier: 'amzn1.alexa-ask-target.shortcut.87246', name: 'Accessibility Settings' }
         | { identifier: 'amzn1.alexa-ask-target.shortcut.39940', name: 'Appearance Settings' }
         | { identifier: 'amzn1.alexa-ask-target.shortcut.94081', name: 'Bluetooth Settings' }
@@ -48,7 +46,7 @@ export module Launcher {
 
 
     interface Contexts {
-        'target': States
+        'target': Targets
     }
     type Capabilities = keyof Contexts
 

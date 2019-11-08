@@ -1,7 +1,7 @@
 import { Message } from './Message';
 
 export module PowerController {
-    type States = 'ON'
+    export type States = 'ON'
         | 'OFF';
 
     type PowerOperations = 'TurnOn' | 'TurnOff';

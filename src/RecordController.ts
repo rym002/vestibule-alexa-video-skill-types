@@ -1,7 +1,7 @@
 import { Message } from './Message'
 
 export module RecordController {
-    type States = 'RECORDING'
+    export type States = 'RECORDING'
         | 'NOT_RECORDING';
 
     type Operations = 'StartRecording'

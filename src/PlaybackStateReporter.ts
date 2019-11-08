@@ -1,5 +1,5 @@
 export module PlaybackStateReporter {
-    type States = 'PLAYING'
+    export type States = 'PLAYING'
         | 'PAUSED'
         | 'STOPPED';
 

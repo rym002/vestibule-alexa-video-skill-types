@@ -4,7 +4,7 @@ export module RecordController {
     export type States = 'RECORDING'
         | 'NOT_RECORDING';
 
-    type Operations = 'StartRecording'
+    export type Operations = 'StartRecording'
         | 'StopRecording';
 
 

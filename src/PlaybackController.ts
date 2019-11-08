@@ -1,7 +1,7 @@
 import { Message } from './Message';
 
 export module PlaybackController {
-    type Operations = 'Play'
+    export type Operations = 'Play'
         | 'Pause'
         | 'Stop'
         | 'StartOver'

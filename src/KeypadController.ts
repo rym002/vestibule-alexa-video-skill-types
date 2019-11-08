@@ -27,7 +27,9 @@ export module KeypadController {
         [namespace]: {
             directive: Message.EndpointMessage<Directives, Message.EndpointRequest>
             capability: {
-                keys: Keys[]
+                additional: {
+                    keys: Keys[]
+                }
             }
         }
     }

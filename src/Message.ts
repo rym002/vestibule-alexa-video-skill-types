@@ -10,14 +10,14 @@ export module Message {
         token: string
     }
 
-    type BearerTokenWithPartition = {
+    export type BearerTokenWithPartition = {
         type: 'BearerTokenWithPartition'
         token: string
         partition: string
         userId: string
     }
 
-    type DirectedUserId = {
+    export type DirectedUserId = {
         type: 'DirectedUserId'
         directedUserId: string
     }

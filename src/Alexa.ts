@@ -41,6 +41,24 @@ export module Alexa {
         endpoint: EndpointResponse
     }
 
+    export type CauseType = 'APP_INTERACTION'
+        | 'PHYSICAL_INTERACTION'
+        | 'PERIODIC_POLL'
+        | 'RULE_TRIGGER'
+        | 'VOICE_INTERACTION'
+
+    export interface ChangePayload {
+        change:{
+            cause:{
+                type:CauseType
+            }
+        } & Context
+    }
+    interface ChangeReportEvent {
+        payload: ChangePayload
+        endpoint: Message.EndpointRequest
+    }
+
     export type NamespaceType = 'Alexa';
     export const namespace: NamespaceType = 'Alexa';
 
@@ -49,6 +67,7 @@ export module Alexa {
             event: {
                 'Response': Response
                 'StateReport': Response
+                'ChangeReport': ChangeReportEvent
             }
             & Message.EndpointMessage<ErrorResponse, EndpointResponse>
             directive: Message.EmptyMessage<'ReportState', Message.EndpointRequest>

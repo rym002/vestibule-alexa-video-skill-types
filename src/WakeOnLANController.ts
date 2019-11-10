@@ -1,4 +1,4 @@
-import { Message } from "Message";
+import { Message } from "./Message";
 
 export module WakeOnLANController {
     export interface Configuration {

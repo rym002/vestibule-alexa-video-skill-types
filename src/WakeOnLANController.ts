@@ -1,3 +1,5 @@
+import { Message } from "Message";
+
 export module WakeOnLANController {
     export interface Configuration {
         MACAddresses: string[]
@@ -6,6 +8,7 @@ export module WakeOnLANController {
     interface Events {
         'WakeUp': {
             payload: {}
+            endpoint: Message.EndpointRequest
         }
     }
 

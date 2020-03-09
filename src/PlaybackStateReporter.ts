@@ -4,7 +4,9 @@ export module PlaybackStateReporter {
         | 'STOPPED';
 
     interface Contexts {
-        'playbackState': States
+        'playbackState': {
+            state: States
+        }
     }
 
     type Capabilities = keyof Contexts

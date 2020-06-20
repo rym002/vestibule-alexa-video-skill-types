@@ -3,7 +3,9 @@ export module EndpointHealth {
         | 'UNREACHABLE';
 
     interface Contexts {
-        'connectivity': States
+        'connectivity': {
+            value: States
+        }
     }
     type Capabilities = keyof Contexts
 

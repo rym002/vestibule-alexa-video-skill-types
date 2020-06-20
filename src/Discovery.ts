@@ -15,11 +15,13 @@ export module Discovery {
         ? {
             interface: NS
             properties: {
+                proactivelyReported?: boolean
+                retrievable?: boolean
                 supported: {
                     name: AllSkills[NS]['capability']['supported']
                 }[]
             }
-        } & ReportableCapability
+        }
         : never
         | AllSkills[NS] extends { capability: { additional: any } }
         ? AllSkills[NS]['capability']['additional']
@@ -49,21 +51,38 @@ export module Discovery {
     export type DisplayCategoryType =
         "ACTIVITY_TRIGGER"
         | "CAMERA"
+        | "COMPUTER"
         | "CONTACT_SENSOR"
         | "DOOR"
         | "DOORBELL"
+        | "EXTERIOR_BLIND"
+        | "FAN"
+        | "GAME_CONSOLE"
+        | "GARAGE_DOOR"
+        | "INTERIOR_BLIND"
+        | "LAPTOP"
         | "LIGHT"
         | "MICROWAVE"
+        | "MOBILE_PHONE"
         | "MOTION_SENSOR"
+        | "MUSIC_SYSTEM"
+        | "NETWORK_HARDWARE"
         | "OTHER"
+        | "OVEN"
+        | "PHONE"
         | "SCENE_TRIGGER"
+        | "SCREEN"
+        | "SECURITY_PANEL"
         | "SMARTLOCK"
         | "SMARTPLUG"
         | "SPEAKER"
+        | "STREAMING_DEVICE"
         | "SWITCH"
+        | "TABLET"
         | "TEMPERATURE_SENSOR"
         | "THERMOSTAT"
-        | "TV";
+        | "TV"
+        | "WEARABLE"
 
 
     export type CapabilityType =
@@ -73,12 +92,9 @@ export module Discovery {
     interface CapabilityBase {
         type: CapabilityType
         version: '3'
+        instance?: string
     }
 
-    interface ReportableCapability {
-        proactivelyReported?: boolean
-        retrievable?: boolean
-    }
     export type NamespaceType = 'Alexa.Discovery';
     export const namespace: NamespaceType = 'Alexa.Discovery';
 

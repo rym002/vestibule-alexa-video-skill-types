@@ -4,7 +4,7 @@ export module PowerController {
     export type States = 'ON'
         | 'OFF';
 
-    type PowerOperations = 'TurnOn' | 'TurnOff';
+    export type Operations = 'TurnOn' | 'TurnOff';
 
     interface Contexts {
         'powerState': States
@@ -16,7 +16,7 @@ export module PowerController {
 
     export interface SkillInterface {
         [namespace]: {
-            directive: Message.EmptyMessage<PowerOperations, Message.EndpointRequest>
+            directive: Message.EmptyMessage<Operations, Message.EndpointRequest>
             context: Contexts
             capability: {
                 supported: Capabilities
